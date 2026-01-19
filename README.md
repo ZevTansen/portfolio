@@ -1,53 +1,43 @@
-A clean, modern, and responsive portfolio website built to showcase my journey as a Computer Science student at International Islamic University Chittagong.
+# My Personal Portfolio
 
-##  Features
-* **Responsive Design:** Optimized for mobile, tablet, and desktop screens.
-* **Modern UI:** Built with a dark theme, glassmorphism effects, and custom typography.
-* **Interactive Elements:** Smooth hover animations and page fade-in transitions.
-* **Functional Contact Form:** Integrated with Google Sheets for real-time message delivery.
-* **Research Section:** Highlights my interest in AI and modern web architectures.
+This is a personal portfolio website I built to showcase my projects and my journey as a Computer Science student at International Islamic University Chittagong. 
 
-##  Tech Stack
-* **HTML5** - Semantic structure
-* **CSS3** - Custom styling, Flexbox/Grid, and Keyframe animations
-* **JavaScript** - Form validation and API handling
-* **GitHub Pages** - Hosting and deployment
+The site is designed to be clean and simple, focusing on my education, skills, and the research I'm interested in.
 
-##  Local Installation Guide
+## Features
+- Fully responsive (works on phones and computers).
+- Modern dark theme with glassmorphism effects.
+- Contact form connected to Google Sheets.
+- Hover animations on project cards and achievements.
+- Links to my GitHub, LinkedIn, and social media.
 
-If you want to run this project locally, follow these steps:
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript (for form handling and animations)
+- GitHub Pages (for hosting)
 
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/ZevTansen/portfolio.git](https://github.com/ZevTansen/portfolio.git)
-Navigate to the Folder:
+## How to run this locally
 
-Bash
+If you want to run this project on your own computer, follow these steps:
 
-cd portfolio
-Open in VS Code:
+1. **Download the code**: Use the "Clone" button on GitHub or run this command:
+   git clone https://github.com/ZevTansen/portfolio.git
 
-Bash
+2. **Open the folder**: Use your terminal or file explorer to go into the project folder:
+   cd portfolio
 
-code .
-Run the Site:
+3. **Open in VS Code**: Open the folder in VS Code.
 
-Install the Live Server extension in VS Code.
+4. **Start a local server**: 
+   - If you have the "Live Server" extension, right-click index.html and select "Open with Live Server".
+   - Or, simply double-click the index.html file to view it in your browser.
 
-Right-click index.html and select "Open with Live Server".
+## Project Structure
+- index.html: The main website file.
+- assets/css/style.css: All the styling and animations.
+- assets/js/script.js: The logic for the contact form.
+- assets/images/: All the photos used in the site.
 
-📂 Project Structure
-index.html - The main entry point of the website.
-
-/assets/css/ - Custom stylesheets.
-
-/assets/js/ - JavaScript logic for form handling.
-
-/assets/images/ - Project screenshots and profile photos.
-
-/assets/files/ - Downloadable assets like CV and Research papers.
-
- Contact
-GitHub: ZevTansen
-
-LinkedIn: Tansen Uddin
+## Contact
+You can reach out to me through my LinkedIn or GitHub profiles linked in the website.
