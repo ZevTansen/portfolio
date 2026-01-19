@@ -1,0 +1,164 @@
+/* --- 1. SETTINGS & VARIABLES --- */
+:root {
+    --bg-color: #0E0E0E;
+    --card-bg: #1A1A1A;
+    --border-color: #2E2E2E;
+    --text-main: #FFFFFF;
+    --text-gray: #A0A0A0;
+    --accent-blue: #60A5FA;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* --- 2. RESET & GLOBAL --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    animation: fadeInPage 1.2s ease-out;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.divider { border: 0; border-top: 1px solid var(--border-color); }
+
+/* --- 3. TYPOGRAPHY --- */
+h1, h2, h3, .btn-primary, .btn-secondary { font-family: var(--font-heading); }
+.text-gray { color: var(--text-gray); }
+.text-main { color: var(--text-main); font-weight: 500; margin-bottom: 4px; }
+
+/* --- 4. HERO SECTION --- */
+.hero { display: flex; align-items: center; gap: 80px; padding: 100px 0; }
+
+.profile-photo {
+    width: 400px; height: 500px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.profile-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.hero-content h1 { font-size: 64px; margin-bottom: 16px; letter-spacing: -2px; }
+.subtitle { font-size: 24px; color: var(--text-gray); margin-bottom: 32px; }
+
+.social-links { margin-bottom: 30px; }
+.social-links a { 
+    color: var(--text-main); 
+    margin-right: 24px; 
+    text-decoration: underline; 
+    font-size: 14px; 
+    text-transform: uppercase; 
+    transition: color 0.3s ease;
+}
+.social-links a:hover { color: var(--accent-blue); text-decoration: none; }
+
+/* --- 5. CARDS & GRIDS --- */
+.section { padding: 80px 0; }
+.section-title { font-size: 28px; font-weight: 600; margin-bottom: 48px; }
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 32px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform; /* Fixes Scroll Lag */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+.project-image {
+    height: 180px;
+    background: #000;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project-image img { 
+    width: 100%; height: 100%; object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img { transform: scale(1.08); }
+
+.hobby-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+/* --- 6. LISTS & SPECIAL ELEMENTS --- */
+.achievement-item { 
+    display: flex; align-items: center; gap: 16px; 
+    margin-bottom: 24px; transition: transform 0.3s ease; 
+}
+.achievement-item:hover { transform: translateX(10px); }
+
+.dot { 
+    height: 8px; width: 8px; background: white; border-radius: 50%; 
+    transition: all 0.3s ease;
+}
+.achievement-item:hover .dot { background: var(--accent-blue); box-shadow: 0 0 10px var(--accent-blue); }
+
+.read-more { 
+    color: white; font-size: 14px; text-decoration: none; 
+    border-bottom: 1px solid var(--border-color); 
+    padding-bottom: 2px; transition: all 0.3s ease;
+}
+.read-more:hover { color: var(--accent-blue); border-bottom-color: var(--accent-blue); }
+
+/* --- 7. BUTTONS & FORMS --- */
+.btn-secondary { 
+    background: var(--card-bg); border: 1px solid var(--border-color); 
+    color: white; padding: 18px 36px; cursor: pointer; border-radius: 4px;
+    text-decoration: none; display: inline-block; transition: all 0.3s ease;
+}
+.btn-secondary:hover { background: #252525; border-color: var(--accent-blue); }
+
+.btn-primary { 
+    background: white; color: black; border: none; padding: 20px; 
+    font-weight: bold; cursor: pointer; border-radius: 4px; width: 100%; 
+    transition: transform 0.2s ease;
+}
+.btn-primary:hover { transform: scale(1.01); background: #f0f0f0; }
+
+.contact-form { max-width: 600px; display: flex; flex-direction: column; gap: 16px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+input, textarea { 
+    background: var(--card-bg); border: 1px solid var(--border-color); 
+    color: white; padding: 16px; border-radius: 4px; outline: none; 
+}
+
+.status-msg { margin-top: 10px; font-size: 14px; text-align: center; }
+.status-success { color: #10B981; }
+.status-error { color: #EF4444; }
+
+/* --- 8. RESPONSIVE --- */
+@media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .hero { flex-direction: column; text-align: center; gap: 40px; }
+    .profile-photo { width: 100%; max-width: 300px; height: 380px; }
+    .hero-content h1 { font-size: 44px; }
+    .project-grid, .hobby-grid, .form-row { grid-template-columns: 1fr; }
+}
+
+/* --- 9. ANIMATIONS --- */
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
