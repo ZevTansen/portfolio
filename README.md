@@ -31,12 +31,14 @@ If you want to run this project on your own computer, follow these steps:
 4. Start a local server: 
    
    - Simply double-click the index.html file to view it in your browser.
+   - figma - https://github.com/ZevTansen/portfolio
 
 # Project Structure
 - index.html: The main website file.
 - assets/css/style.css: All the styling and animations.
 - assets/js/script.js: The logic for the contact form.
 - assets/images/: All the photos used in the site.
+  
 
 # Contact
 You can reach out to me through my LinkedIn or GitHub profiles linked in the website.
