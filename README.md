@@ -31,7 +31,7 @@ If you want to run this project on your own computer, follow these steps:
 4. Start a local server: 
    
    - Simply double-click the index.html file to view it in your browser.
-   - figma - https://github.com/ZevTansen/portfolio
+   - figma - (https://www.figma.com/design/lTRc5KERe0clp3o7bPwQQs/Untitled?node-id=1-3)
 
 # Project Structure
 - index.html: The main website file.
